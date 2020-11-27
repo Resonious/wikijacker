@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "wikijacker",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://ja.m.wikipedia.org/w/index.php?title=Special*"],
+      "js": ["go-somewhere-else.js"]
+    }
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wikijacker@nigelbaillie.me"
+    }
+  }
+}
